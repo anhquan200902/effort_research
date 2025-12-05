@@ -1,7 +1,3 @@
-Dựa trên phân tích các bài báo được cung cấp, dưới đây là chi tiết về **Effort** và **GenD**, làm nổi bật những ưu điểm của chúng so với các công trình trước đó, hiệu suất benchmark so với các tiền nhiệm, và các hạn chế của chúng.
-
----
-
 ### **1. Mô hình: Effort (Mô hình hóa trực giao hiệu quả)**
 *Từ: "Orthogonal Subspace Decomposition for Generalizable AI-Generated Image Detection" (ICML 2025)*
 
