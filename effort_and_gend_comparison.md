@@ -62,3 +62,6 @@ GenD so sánh trực tiếp với **Effort** và **ForAda** (bài báo khác tro
 | **Chiến lược Dữ liệu** | Huấn luyện FF++ tiêu chuẩn. | Huấn luyện Thật/Giả **Có cặp** (Đổi mới then chốt). |
 | **Hiệu suất** | Xuất sắc (0.940 trên TB 7 tập dữ liệu). | **Vượt trội** (91.6% trên TB 14 tập dữ liệu). |
 | **Người chiến thắng?** | | **GenD** dường như là mô hình vượt trội dựa trên các benchmark được cung cấp trong bài báo GenD, bao gồm Effort như một đường cơ sở. |
+
+### **Kết luận chung** 
+Hiện tại các model như Effort hay GenD mặc dù đạt kết quả SoTA nhưng vẫn mắc những điểm yếu chung cho những model phát hiện deepfake: Chỉ tổng quát hóa được trong tập giá trị cho sẵn. Nghiên cứu cho thấy mặc dù model mới vẫn bị giảm sút 30-40% độ hiệu quả chỉ sau 3-4 tháng do không bắt kịp được những phương thức black-box không công khai mã nguồn như Midjourney v6, Dall-E 3 hay mới đây nhất là Gemini Nano Banana. Cần thiết phải có những phương pháp training phù hợp đi kèm để hy vọng có thể bắt kịp thời đại.
