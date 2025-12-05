@@ -64,4 +64,8 @@ GenD so sánh trực tiếp với **Effort** và **ForAda** (bài báo khác tro
 | **Người chiến thắng?** | | **GenD** dường như là mô hình vượt trội dựa trên các benchmark được cung cấp trong bài báo GenD, bao gồm Effort như một đường cơ sở. |
 
 ### **Kết luận chung** 
-Hiện tại các model như Effort hay GenD mặc dù đạt kết quả SoTA nhưng vẫn mắc những điểm yếu chung cho những model phát hiện deepfake: Chỉ tổng quát hóa được trong tập giá trị cho sẵn. Nghiên cứu cho thấy mặc dù model mới vẫn bị giảm sút 30-40% độ hiệu quả chỉ sau 3-4 tháng do không bắt kịp được những phương thức black-box không công khai mã nguồn như Midjourney v6, Dall-E 3 hay mới đây nhất là Gemini Nano Banana. Cần thiết phải có những phương pháp training phù hợp đi kèm để hy vọng có thể bắt kịp thời đại.
+Mặc dù các mô hình như Effort hay GenD hiện đang đạt kết quả SOTA (State-of-the-Art) trên các tập benchmark học thuật, thực tế triển khai cho thấy chúng vẫn tồn tại điểm yếu chí mạng về khả năng tổng quát hóa (generalization gap). Các mô hình này thường chỉ hoạt động tốt trong miền dữ liệu đã được huấn luyện.
+
+Các nghiên cứu gần đây chỉ ra rằng, hiệu suất phát hiện của các model này có thể sụt giảm từ 30-40% chỉ sau 3-4 tháng khi đối mặt với các kiến trúc sinh ảnh mới (unseen generators). Nguyên nhân là do các phương pháp hiện tại không bắt kịp tốc độ cập nhật của các mô hình thương mại đóng mã nguồn (black-box) như Midjourney v6, DALL-E 3 hay mới đây nhất là Gemini 2.5 Flash Image (Nano Banana) hoặc Gemini 3 Pro Image (Nano Banana Pro).
+
+Kiến nghị: Việc chỉ phụ thuộc vào các model phát hiện có sẵn là rủi ro lớn. Cần thiết phải xây dựng một chiến lược "học liên tục" (continuous learning) và cập nhật dữ liệu định kỳ để hệ thống có thể thích ứng nhanh với các thuật toán sinh ảnh mới.
